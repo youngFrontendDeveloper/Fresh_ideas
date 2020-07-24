@@ -557,9 +557,63 @@ svg {
   justify-content: space-between;
 }
 
-// .item1 {
+.item2 {
+  opacity: 0;
+  animation: showBlock2 30s ease-in-out infinite;
+}
 
-// }
+@keyframes showBlock2 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.item3 {
+  opacity: 0;
+  animation: showBlock3 30s ease-in-out infinite;
+}
+
+@keyframes showBlock3 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 .slider-text {
   width: 380px;
@@ -574,6 +628,7 @@ svg {
   font-size: 35px;
   font-weight: normal;
   line-height: 1.6;
+  text-transform: capitalize;
   border-bottom: 1px dotted @color-black;
 }
 
