@@ -25,17 +25,6 @@ const browserSync = require("browser-sync").create();
 
 // Файлы для подключения в строгом порядке:
 
-// let lessFiles = [
-//   // Пишем все файлы, которые хотим объединить, в том порядке, в каком они будут располагаться в объединенном файле
-//   "./src/less/variables.less", 
-//   "./src/less/mixins.less", 
-//   "./src/less/scaffolding.less",
-//   "./src/less/header.less",
-//   "./src/less/nav.less",
-//   "./src/less/site-list.less",
-//   "./src/less/user-list.less"
-// ];
-
 let jsFiles = [
   // "./source/js/lib.js",
   // "./node_modules/slick-carousel/slick/slick.js",
@@ -53,25 +42,30 @@ function styles() {
     // "./node_modules/slick-carousel/slick/slick.css",
     // "./node_modules/magnific-popup/dist/magnific-popup.css",
     "./source/less/variables.less", 
-    "./source/less/mixins.less", 
+    "./source/less/mixins.less",
+    "./source/less/page.less",  
     "./source/less/scaffolding.less",
-    "./source/less/page-header.less",
+    "./source/less/title.less",
+    "./source/less/subtitle.less",
+    "./source/less/text.less",
+    "./source/less/section-link.less",
+    "./source/less/header.less",
+    "./source/less/logo.less",
     "./source/less/nav.less",
     "./source/less/slider.less",
-    // "./source/less/title.less",
-    // "./source/less/text.less",
-    // "./source/less/fithures.less",
-    // "./source/less/hotel.less",
-    // "./source/less/btn.less",
+    "./source/less/container.less",
+    "./source/less/aside.less",
+    "./source/less/subsection.less",
+    "./source/less/main.less",
+    "./source/less/services.less",
+    "./source/less/about.less",
+    "./source/less/testimonials.less",
+    "./source/less/footer.less",
     // "./source/less/map.less",
     // "./source/less/footer.less",
-    // "./source/less/section-header.less",
     // "./source/less/form.less",
     // "./source/less/photo.less",
     // "./source/less/video.less",
-
-    
-    
     
     
   ])
@@ -270,7 +264,7 @@ gulp.task("fonts", function() {
 });
 
 gulp.task("html", function() {
-  return gulp.src("source/**/*.html")
+  return gulp.src("*/**/*.html")
     .pipe(gulp.dest("build/"))
     .pipe(browserSync.stream());
 });

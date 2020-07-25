@@ -391,6 +391,29 @@ template {
   font-weight: bold;
   color: @color-black;
 }
+body {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  .text-normal();
+  background-color: @color-white;
+  // box-sizing: border-box;
+  box-shadow: 0 0 5px 5px #d8d8d8;
+}
+
+.page-header {
+  margin-bottom: 8px;  
+}
+
+.container {
+  padding-bottom: 90px;
+}
+
+
+
+
 @font-face {
   font-weight: normal;
   font-family: "Georgia";
@@ -411,15 +434,6 @@ template {
 
 html {
   background-image: url("../img/bg1.png");
-}
-body {
-  width: 980px;
-  margin: 0 auto;
-  padding: 15px;
-  .text-normal();
-  background-color: @color-white;
-  // box-sizing: border-box;
-  box-shadow: 0 0 5px 5px #d8d8d8;
 }
 
 img {
@@ -481,13 +495,58 @@ svg {
   //     display: none;
   //   }
   // }
-.page-header {
+.title {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-transform: none;
+  color: @color-black;
+  border-bottom: 1px dotted @color-black;
+}
+.subtitle {
+  margin: 0;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.7;
+  color: @color-black;
+  font-weight: normal;
+  text-transform: none;
+}
+.text {
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+.text--white {
+  color: @color-white;
+}
+.section-link {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: @color-dark;
+}
+.header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 100px;
-  margin-bottom: 8px;
   padding-top: 10px;
+}
+.logo {
+  width: 221px;
+  height: 84px;
 }
 .nav{
   margin-top: 15px;
@@ -506,7 +565,7 @@ svg {
   box-shadow: 0 1px 2px rgba(0,0,0, 0.2);
 }
 
-.nav-item.active {
+.nav-item--active {
   background-color: @color-yellow;
 }
 
@@ -540,9 +599,9 @@ svg {
 
 .slider {
   position: relative;
-  width: 960px;
+  width: 940px;
   height: 318px;
-  // padding: 10px;
+  padding: 10px;
   border: 10px solid #eaeaea;
   border-radius: 8px;
 }
@@ -659,4 +718,132 @@ svg {
 
 .slider-image {
   width: 455px;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  text-align: flex-start;
+}
+.aside {
+  display: inline-block;
+  width: 277px;
+  margin-left: 30px;
+  padding: 15px;
+}
+
+.aside__title {
+  margin-top: 12px;
+}
+
+.news__subtitle {
+  padding-top: 8px;
+  margin-bottom: 12px;
+}
+
+.news__subtitle span {
+  // display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 8px;
+  background-color: #ffcc33;
+  border-radius: 0.5em;
+}
+
+.news-text {
+  margin-bottom: 17px;
+  padding-bottom: 12px;
+  border-bottom: 1px dotted @color-black;
+}
+
+.banner {
+  margin: 5px 0px 8px 0;
+  padding: 8px;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.5em;
+}
+.subsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.subsection--inner-page {
+  flex-wrap: wrap;
+}
+
+.subsection-image {
+  width: 150px;
+  height: 99px;
+  margin: 5px 13px 8px 0;
+  padding: 8px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+.subsection-image--largest {
+  width: 200px;
+  height: 97px;
+}
+
+.subsection-text {
+  max-width: 420px;
+  padding-top: 8px;
+}
+
+.subsection-text--little {
+  max-width: 370px;
+  padding-top: 2px;
+}
+
+.subsection-text--inner-page {
+  max-width: 640px;
+}
+.main {
+  display: inline-block;
+  width: 643px;
+  padding-bottom: 23px;
+}
+
+
+.services {
+  padding: 15px;
+}
+
+.services__title {
+  margin-top: 12px;
+}
+
+.services__text {
+  margin-bottom: 7px;
+}
+
+
+.about {
+  padding: 15px;
+}
+
+
+
+
+
+
+.testimonials {
+  padding: 15px;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1010px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @color-black;
+}
+
+.footer-link {
+  margin-right: 160px;
+  color: @color-white;
 }
