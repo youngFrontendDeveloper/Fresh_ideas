@@ -60,6 +60,7 @@ function styles() {
     "./source/less/services.less",
     "./source/less/about.less",
     "./source/less/testimonials.less",
+    "./source/less/news.less",
     "./source/less/footer.less",
     // "./source/less/map.less",
     // "./source/less/footer.less",
