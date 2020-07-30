@@ -48,7 +48,7 @@ function styles() {
     "./source/less/title.less",
     "./source/less/subtitle.less",
     "./source/less/text.less",
-    "./source/less/section-link.less",
+    "./source/less/links.less",
     "./source/less/header.less",
     "./source/less/logo.less",
     "./source/less/nav.less",

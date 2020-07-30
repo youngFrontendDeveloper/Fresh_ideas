@@ -441,8 +441,34 @@ svg {
 .text--white {
   color: #ffffff;
 }
-.section-link {
+.link {
+  display: block;
   font-family: inherit;
+  white-space: nowrap;
+}
+.link--navigation {
+  position: relative;
+  padding: 13px 15px;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.link--navigation:hover.link--navigation::after {
+  content: "";
+  position: absolute;
+  margin-left: 14px;
+  margin-right: 14px;
+  left: 0;
+  bottom: 13px;
+  width: calc(100% - 28px);
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.link--section {
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -487,30 +513,6 @@ svg {
 }
 .nav-item--active {
   background-color: #FFCC33;
-}
-.nav-link {
-  display: block;
-  position: relative;
-  padding: 13px 15px;
-  font-size: 20px;
-  white-space: nowrap;
-  color: #ffffff;
-  text-transform: capitalize;
-  text-decoration: none;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-}
-.nav-link:hover.nav-link::after {
-  content: "";
-  position: absolute;
-  margin-left: 14px;
-  margin-right: 14px;
-  left: 0;
-  bottom: 13px;
-  width: calc(100% - 28px);
-  height: 2px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 .slider {
   position: relative;
