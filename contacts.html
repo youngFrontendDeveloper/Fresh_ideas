@@ -45,29 +45,33 @@
       <!-- +++++++++++++++ contacts ++++++++++++++++ -->
       <section class="main__contacts contacts">
         <h2 class="title">Our contacts</h2>
-        <section class="subsection subsection--inner-page">
-          
-          <div class="subsection-text subsection-text--inner-page">
             
-            <table>
+            <table class="contacts__table">
               <tr>
                 <td>Adress:</td>
                 <td>France, Paris, 12, Louis IX street</td>
               </tr>
               <tr>
                 <td>Phone:</td>
-                <td> <a href="tel:+33 1 70 37 14 79"> +33 1 70 37 14 79</a></td>
+                <td> <a class="link" href="tel:+33 1 70 37 14 79"> +33 1 70 37 14 79</a></td>
               </tr>
               <tr>
                 <td>E-mail:</td>
-                <td><a href="mailto: relationsclientele@lebonmarche.fr">relationsclientele@lebonmarche.fr</a></td>
+                <td><a class="link" href="mailto: relationsclientele@lebonmarche.fr">relationsclientele@lebonmarche.fr</a></td>
               </tr>
             </table>
-           
-          
+            <form class="contacts__form form" action="#" method="post">
+              <h3 class="form__subtitle subtitle">Send us a message</h3>
+              <input class="input" type="text" placeholder="First name*">
+              <input class="input" type="text" placeholder="Last name*">
+              <input class="input" type="email" placeholder="E-mail*">
+              <input class="input" type="phone" placeholder="Phone">
+              <textarea name="message" class="message" id="message" placeholder="Your message*"></textarea>
+              <p>* Mandatary fields</p>
+              <input class="form__submit button" type="submit" value="Send">
+            </form>
             
-          </div>
-        </section>
+          
       </section>
 
  
@@ -78,17 +82,17 @@
         <h2 class="aside__title title">Latest news</h2>
         <div class="news-text">
           <h3 class="news__subtitle subtitle">News one <span>10.09.2011</span></h3>
-          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum aspernatur in facere qui molestiae. <a href="news.html" class="link--section">Read more..</a></p>
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum aspernatur in facere qui molestiae. <a href="news.html" class="link link--section">Read more..</a></p>
           
         </div>
         <div class="news-text">
           <h3 class="news__subtitle subtitle">News two <span>20.09.2011</span></h3>
-          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum aspernatur in facere qui molestiae. <a href="news.html" class="link--section">Read more..</a></p>
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum aspernatur in facere qui molestiae. <a href="news.html" class="link link--section">Read more..</a></p>
           
         </div>
         <div class="news-text">
           <h3 class="news__subtitle subtitle">News three <span>27.09.2011</span></h3>
-          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum aspernatur in facere qui molestiae. <a href="news.html" class="link--section">Read more..</a></p>
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum aspernatur in facere qui molestiae. <a href="news.html" class="link link--section">Read more..</a></p>
           
         </div>
       </section>
@@ -105,7 +109,7 @@
   <footer class="page-footer footer">
     <section class="footer-text">
       <p class="text text--white">Valid html5, css3, design and code by
-        <a href="#" class="footer-link">marija zaric - creative simplicity</a>
+        <a href="#" class="link link--footer">marija zaric - creative simplicity</a>
       </p>
     </section>
     <section class="copyrighting">

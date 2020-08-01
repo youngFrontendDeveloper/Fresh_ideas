@@ -1,7 +1,9 @@
 .link {
   display: block;
   font-family: inherit;
+  color: @color-dark;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 
@@ -12,7 +14,6 @@
   font-size: 20px;
   color: @color-white;
   text-transform: capitalize;
-  text-decoration: none;
   text-shadow: 0 1px 1px rgba(0,0,0,0.3);
   &:hover.link--navigation::after {
     content: "";
@@ -33,6 +34,13 @@
 .link--section {
   font-size: 15px;
   font-weight: bold;
-  text-decoration: none;
-  color: @color-dark;
+  
+  
+}
+
+.link--footer {
+  display: inline;
+  margin-right: 160px;
+  color: @color-white;
+  text-decoration: underline;
 }
