@@ -19,6 +19,7 @@
 
 .item2 {
   opacity: 0;
+  z-index: 0;
   animation: showBlock2 30s ease-in-out infinite;
 }
 
@@ -66,12 +67,15 @@
   }
   66% {
     opacity: 1;
+    
   }
   83% {
     opacity: 1;
+    
   }
   100% {
     opacity: 0;
+    
   }
 }
 
@@ -99,8 +103,11 @@
   line-height: 1.7;
 }
 
-.slider-text__button {
-  margin: 8px 0;
+.slider__button {
+  position: absolute;
+  top: 220px;
+  left: 65px;
+  
 }
 
 .slider-image {

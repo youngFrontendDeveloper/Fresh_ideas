@@ -449,7 +449,7 @@ svg {
   text-transform: uppercase;
 }
 .link {
-  display: block;
+  display: inline-block;
   font-family: inherit;
   color: #333333;
   white-space: nowrap;
@@ -502,6 +502,7 @@ svg {
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   border: 1px solid #333333;
+  background-color: #333333;
   background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
   border-radius: 0.5em;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -525,6 +526,9 @@ svg {
 .logo {
   width: 221px;
   height: 84px;
+}
+.logo:hover {
+  opacity: 0.7;
 }
 .nav {
   margin-top: 15px;
@@ -574,6 +578,7 @@ svg {
 }
 .item2 {
   opacity: 0;
+  z-index: 0;
   -webkit-animation: showBlock2 30s ease-in-out infinite;
   animation: showBlock2 30s ease-in-out infinite;
 }
@@ -695,8 +700,10 @@ svg {
   font-size: 18px;
   line-height: 1.7;
 }
-.slider-text__button {
-  margin: 8px 0;
+.slider__button {
+  position: absolute;
+  top: 220px;
+  left: 65px;
 }
 .slider-image {
   width: 455px;
@@ -850,6 +857,13 @@ td {
 }
 .testimonials {
   padding: 15px;
+}
+.error-404 {
+  width: 400px;
+  margin: 300px auto 300px;
+}
+.error-404__text {
+  margin-bottom: 50px;
 }
 .footer {
   position: absolute;

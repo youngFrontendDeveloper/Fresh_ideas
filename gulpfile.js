@@ -65,6 +65,7 @@ function styles() {
     "./source/less/form.less",
     "./source/less/testimonials.less",
     "./source/less/news.less",
+    "./source/less/error-404.less",
     "./source/less/footer.less",
 
 
