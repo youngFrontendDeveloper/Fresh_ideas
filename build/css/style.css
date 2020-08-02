@@ -330,6 +330,13 @@ template {
 }
 body {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 980px;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -860,7 +867,8 @@ td {
 }
 .error-404 {
   width: 400px;
-  margin: 300px auto 300px;
+  margin: 0 auto;
+  margin-top: 300px;
 }
 .error-404__text {
   margin-bottom: 50px;
