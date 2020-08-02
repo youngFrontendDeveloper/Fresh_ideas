@@ -808,6 +808,9 @@ svg {
   width: 643px;
   padding-bottom: 23px;
 }
+.main--error {
+  width: 100%;
+}
 .services {
   padding: 15px;
 }
@@ -866,9 +869,9 @@ td {
   padding: 15px;
 }
 .error-404 {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 50px;
 }
 .error-404__text {
   margin-bottom: 50px;
