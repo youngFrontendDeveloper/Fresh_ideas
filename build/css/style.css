@@ -337,6 +337,9 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 980px;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -494,6 +497,7 @@ svg {
   text-decoration: underline;
 }
 .link--404 {
+  display: block;
   text-align: center;
   font-size: 33px;
   color: rgba(255, 51, 0, 0.89);
