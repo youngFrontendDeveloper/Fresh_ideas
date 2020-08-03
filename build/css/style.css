@@ -337,9 +337,6 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 980px;
   min-height: 93vh;
   margin: 0 auto;
@@ -497,7 +494,7 @@ svg {
   color: #ffffff;
   text-decoration: underline;
 }
-.link--404 {
+.link--big {
   display: block;
   text-align: center;
   font-size: 33px;
