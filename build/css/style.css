@@ -891,6 +891,9 @@ td {
 .error-404__text {
   margin-bottom: 50px;
 }
+.error-404__link {
+  margin: 0 auto;
+}
 .footer {
   position: absolute;
   left: 0;
