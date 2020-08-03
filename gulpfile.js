@@ -39,7 +39,7 @@ function styles() {
   return gulp.src([
     // Пишем все файлы, которые хотим объединить, в том порядке, в каком они будут располагаться в объединенном файле
     "./node_modules/normalize.css/normalize.css",
-    // "./source/less/**/*.less",
+   
     // "./node_modules/slick-carousel/slick/slick.css",
     // "./node_modules/magnific-popup/dist/magnific-popup.css",
     "./source/less/variables.less", 
@@ -69,18 +69,13 @@ function styles() {
     "./source/less/footer.less",
 
 
-    // "./source/less/map.less",
-    // "./source/less/footer.less",
-    // "./source/less/form.less",
-    // "./source/less/photo.less",
-    // "./source/less/video.less",
     
     
   ])
-  .pipe(sourcemaps.init())    // инициализируем создание Source Maps
   .pipe(plumber())
+  .pipe(sourcemaps.init())    // инициализируем создание Source Maps
   .pipe(concat("style.less"))
-  .pipe(gulp.dest("./source/less")) 
+  // .pipe(gulp.dest("./source/less")) 
   .pipe(less())
   .pipe(autoprefixer({
     overrideBrowserslist:  ["last 2 versions"],

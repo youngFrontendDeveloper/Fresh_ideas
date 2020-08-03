@@ -328,7 +328,7 @@ template {
   font-weight: bold;
   color: #000000;
 }
-body {
+.page {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -709,6 +709,8 @@ svg {
 .slider-text__text {
   margin: 0;
   margin-top: 8px;
+}
+.text--big {
   font-size: 18px;
   line-height: 1.7;
 }
@@ -727,7 +729,9 @@ svg {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  text-align: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .aside {
   display: inline-block;
@@ -828,6 +832,15 @@ svg {
 .about {
   padding: 15px;
 }
+.about-title {
+  margin-top: 12px;
+}
+.contacts {
+  padding: 15px;
+}
+.contacts__title {
+  margin-top: 12px;
+}
 .contacts__table {
   margin-top: 20px;
 }
@@ -852,7 +865,7 @@ td {
   margin-bottom: 12px;
 }
 .input {
-  width: 314px;
+  width: calc(50% - 15px);
   padding: 18px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
