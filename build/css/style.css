@@ -455,6 +455,7 @@ svg {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1.8;
 }
 .link {
   display: inline-block;
@@ -494,13 +495,8 @@ svg {
   color: #ffffff;
   text-decoration: underline;
 }
-.link--big {
-  display: block;
-  text-align: center;
-  font-size: 33px;
-  color: rgba(255, 51, 0, 0.89);
-  font-weight: bold;
-  text-transform: uppercase;
+.link--footer:hover {
+  text-decoration: none;
 }
 .button {
   display: inline-block;
@@ -520,6 +516,13 @@ svg {
 }
 .button:hover {
   background: #000000;
+}
+.button--big {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .header {
   display: -webkit-box;
@@ -884,15 +887,20 @@ td {
   padding: 15px;
 }
 .error-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 500px;
   margin: 0 auto;
   margin-top: 50px;
 }
 .error-404__text {
   margin-bottom: 50px;
-}
-.error-404__link {
-  margin: 0 auto;
 }
 .footer {
   position: absolute;
