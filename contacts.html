@@ -41,31 +41,30 @@
   <div class="container">
     <!-- +++++++++++++++ MAIN ++++++++++++++++ -->
     <main class="page-main main">
+      <h1 class="visualy-hidden">Our contacts</h1>
 
       <!-- +++++++++++++++ contacts ++++++++++++++++ -->
       <section class="main__contacts contacts">
         <h2 class="contacts__title title">Our contacts</h2>
             
-            <table class="contacts__table">
-              <tr>
-                <td>Adress:</td>
-                <td>France, Paris, 12, Louis IX street</td>
-              </tr>
-              <tr>
-                <td>Phone:</td>
-                <td> <a class="link" href="tel:+33 1 70 37 14 79"> +33 1 70 37 14 79</a></td>
-              </tr>
-              <tr>
-                <td>E-mail:</td>
-                <td><a class="link" href="mailto: relationsclientele@lebonmarche.fr">relationsclientele@lebonmarche.fr</a></td>
-              </tr>
-            </table>
+            <div class="contacts__block contact-block">
+              <div class="contact-block__left">Adress:</div>
+              <div class="contact-block__right">France, Paris, 12, Louis IX street</div>
+              <div class="contact-block__left">Phone:</div>
+              <div class="contact-block__right">
+                <a class="link" href="tel:+33 1 70 37 14 79"> +33 1 70 37 14 79</a>
+              </div>
+              <div class="contact-block__left">E-mail:</div>
+              <div class="contact-block__right">
+                <a class="link" href="mailto: relationsclientele@lebonmarche.fr">relationsclientele@lebonmarche.fr</a>
+              </div>
+            </div>
             <form class="contacts__form form" action="#" method="post">
               <h3 class="form__subtitle subtitle">Send us a message</h3>
               <input class="input" type="text" placeholder="First name*">
               <input class="input" type="text" placeholder="Last name*">
               <input class="input" type="email" placeholder="E-mail*">
-              <input class="input" type="phone" placeholder="Phone">
+              <input class="input" type="tel" placeholder="Phone">
               <textarea name="message" class="message" id="message" placeholder="Your message*"></textarea>
               <p>* Mandatary fields</p>
               <input class="form__submit button" type="submit" value="Send">
@@ -112,7 +111,7 @@
         <a href="#" class="link link--footer">marija zaric - creative simplicity</a>
       </p>
     </section>
-    <section class="copyrighting">
+    <section class="copyright">
       <p class="text text--white">
         &copy; 2011 Fresh ideas
       </p>
