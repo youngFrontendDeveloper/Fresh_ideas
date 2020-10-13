@@ -57,6 +57,7 @@ function styles() {
     "./source/less/slider.less",
     "./source/less/container.less",
     "./source/less/aside.less",
+    "./source/less/banner.less",
     "./source/less/subsection.less",
     "./source/less/main.less",
     "./source/less/services.less",
